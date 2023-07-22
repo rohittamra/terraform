@@ -21,6 +21,14 @@ go in settings of github > secrets values for:
     AZURE_SUBSCRIPTION_ID --> subscription from az login
     AZURE_TENANT_ID --> tenant
 
+
+ALSO create a storage group and change the values in backend.tf
+dont forget to create container 
+
+ANd get the value of 
+    AZURE_STORAGE_ACCESS_KEY ---> Access key of the storage account
+
+
 ================================
 
 ON LOCAL TO CONNECT:
