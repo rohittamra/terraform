@@ -19,7 +19,7 @@ go in settings of github > secrets values for:
     AZURE_CLIENT_ID --> appId
     AZURE_CLIENT_SECRET --> password
     AZURE_SUBSCRIPTION_ID --> subscription from az login
-    AZURE_TENANT_ID --> tenant
+    AZURE_TENANT_ID --> tenant 
 
 
 ALSO create a storage group and change the values in backend.tf
