@@ -31,8 +31,11 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -out=tfplan
+
+      - name: Checking "tfplan"
+        run: cat tfplan
         
       - name: Terraform apply
-        run: terraform apply tfplan -auto-approve
+        run: terraform apply "tfplan" -auto-approve
         env:
           ARM_ACCESS_KEY: ${{ secrets.AZURE_STORAGE_ACCESS_KEY }}
